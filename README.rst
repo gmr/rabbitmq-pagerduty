@@ -102,7 +102,7 @@ If no policy is defined setting a threshold, queues are not monitored.
 
 +---------------------------+-------------+-----------------------------------------------------+
 | Parameter                 | Type        | Description                                         |
-+===========================+===================================================================+
++===========================+=============+=====================================================+
 | ``pd-service-key``        | ``string``  | The service integration key to use                  |
 +---------------------------+-------------+-----------------------------------------------------+
 | ``pd-consumer-threshold`` | ``integer`` | Minimum number of consumers that trigger an alert   |
@@ -117,6 +117,6 @@ If no policy is defined setting a threshold, queues are not monitored.
 +---------------------------+-------------+-----------------------------------------------------+
 | ``pd-graph-link``         | ``string``  | A graph link that is included in the alert context  |
 +---------------------------+-------------+-----------------------------------------------------+
-| ``pd-unsynchronized-ha``  | ``bool``    |  When enabled, alert when a HA queue is not fully   |
+| ``pd-unsynchronized-ha``  | ``bool``    | When enabled, alert when a HA queue is not fully    |
 |                           |             | synchronized.                                       |
 +---------------------------+-------------+-----------------------------------------------------+
