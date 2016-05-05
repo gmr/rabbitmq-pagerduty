@@ -7,8 +7,7 @@
 
 -behaviour(rabbit_mgmt_extension).
 
--export([dispatcher/0,
-         web_ui/0]).
+-export([dispatcher/0, web_ui/0]).
 
 dispatcher() ->
   [{"/pagerduty", pagerduty_mgmt, []}].

@@ -7,13 +7,11 @@
 
 -behavior(mirrored_supervisor).
 
--export([init/1,
-         start_link/0]).
+-export([init/1, start_link/0]).
 
 -include_lib("rabbit_common/include/rabbit.hrl").
 
 init([]) ->
-  rabbit_log:info("pagerduty_sup init/1"),
   {
     ok,
     {
@@ -27,7 +25,6 @@ init([]) ->
   }.
 
 start_link() ->
-  rabbit_log:info("pagerduty_sup start_link/0", []),
   mirrored_supervisor:start_link({local, ?MODULE}, ?MODULE,
                                  fun rabbit_misc:execute_mnesia_transaction/1,
                                  ?MODULE, []).

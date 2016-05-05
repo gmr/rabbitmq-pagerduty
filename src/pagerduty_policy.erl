@@ -15,7 +15,6 @@
 -define(POLICY_KEYS,
         [
           <<"pd-service-key">>,
-          <<"pd-check-frequency">>,
           <<"pd-consumer-threshold">>,
           <<"pd-message-threshold">>,
           <<"pd-size-threshold">>,
