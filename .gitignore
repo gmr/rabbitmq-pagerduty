@@ -1,0 +1,15 @@
+.eunit
+deps
+*.o
+*.beam
+*.plt
+build
+dist
+erl_crash.dump
+ebin
+.rebar
+.idea
+.erlang.mk
+cover
+pagerduty.d
+plugins

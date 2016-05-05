@@ -1,0 +1,14 @@
+{application, pagerduty,
+  [
+    {description, "RabbitMQ PagerDuty Monitor"},
+    {vsn, "%%VSN%%"},
+    {env, [
+      {access_token, undefined},
+      {service_key, undefined}
+    ]},
+    {modules, []},
+    {registered, []},
+    {broker_version_requirements, ["3.7.0"]},
+    {applications, [kernel, stdlib, inets, rabbit, rabbitmq_management]}
+  ]
+}.
