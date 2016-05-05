@@ -47,7 +47,7 @@ The following configuration parameters are used to specify node specific monitor
 
 +----------------------------------+-------------+---------------------------------------------+
 | Description                      | Data Type   | Description                                 |
-+----------------------------------+-------------+---------------------------------------------+
++==================================+=============+=============================================+
 | ``connection_count``             | ``integer`` | Alert when the quantity of connections      |
 |                                  |             | exceeds the specified value.                |
 +----------------------------------+-------------+---------------------------------------------+
@@ -70,7 +70,7 @@ The following configuration parameters are used to specify node specific monitor
 |                                  |             | queue depth exceeds the specified value.    |
 +----------------------------------+-------------+---------------------------------------------+
 | ``socket_descriptors``           | ``integer`` | Alert when the number of socket descriptors |
-|                                  |             | exceed the specified value.
+|                                  |             | exceed the specified value.                 |
 +----------------------------------+-------------+---------------------------------------------+
 
 Example Configuration
@@ -78,7 +78,7 @@ Example Configuration
 
 The following block illustrates how to specify the configuration values.
 
-.. code::
+.. code:: javascript
 
     pagerduty.api_key = example
     pagerduty.check_interval = 30
