@@ -18,11 +18,10 @@
 -include_lib("rabbit_common/include/rabbit.hrl").
 
 init([]) ->
-  rabbit_log:info("pagerduty_sup_sup init/1", []),
+  timer:apply_after(0, ?MODULE, start_child, []),
   {ok, {{one_for_one, 0, 1}, []}}.
 
 start_child() ->
-  rabbit_log:info("pagerduty_sup_sup starting child", []),
   supervisor2:start_child(?MODULE,
                           {
                             pagerduty_sup, {pagerduty_sup, start_link, []},
@@ -30,5 +29,4 @@ start_child() ->
                           }).
 
 start_link() ->
-  rabbit_log:info("pagerduty_sup_sup starting link", []),
   supervisor2:start_link({local, ?MODULE}, ?MODULE, []).

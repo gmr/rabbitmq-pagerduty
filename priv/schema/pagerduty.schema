@@ -1,0 +1,77 @@
+%%==============================================================================
+%% @author Gavin M. Roy <gavinr@aweber.com>
+%% @copyright 2016 AWeber Communications
+%% @end
+%%==============================================================================
+
+%% API Key to use when making calls to PagerDuty
+{mapping,
+ "pagerduty.api_key",
+ "pagerduty.api_key",
+ [{datatype, string}]}.
+
+%% How often to perform monitoring checks
+{mapping,
+ "pagerduty.check_interval",
+ "pagerduty.check_interval",
+ [{datatype, integer}]}.
+
+%% Alert when there is a cluster partition
+{mapping,
+ "pagerduty.cluster_checks.partition",
+ "pagerduty.cluster_checks_partition",
+ [{datatype, {enum, [true, false]}}]}.
+
+%% Alert when the quantity of nodes is less than this value
+{mapping,
+ "pagerduty.cluster_checks.node_count",
+ "pagerduty.cluster_checks_node_count",
+ [{datatype, integer}]}.
+
+%% Alert when the quantity of connections exceed this value
+{mapping,
+ "pagerduty.node_checks.connection_count",
+ "pagerduty.node_checks_connection_count",
+ [{datatype, integer}]}.
+
+%% Alert when the quantity of channels exceed this value
+{mapping,
+ "pagerduty.node_checks.channel_count",
+ "pagerduty.node_checks_channel_count",
+ [{datatype, integer}]}.
+
+%% Alert when the disk high watermark is hit
+{mapping,
+ "pagerduty.node_checks.disk_high_watermark",
+ "pagerduty.node_checks_disk_high_watermark",
+ [{datatype, {enum, [true, false]}}]}.
+
+%% Alert when the quantity of erlang processes exceed this value
+{mapping,
+ "pagerduty.node_checks.erlang_processes",
+ "pagerduty.node_checks_erlang_processes",
+ [{datatype, integer}]}.
+
+%% Alert when the quantity of file descriptors exceed this value
+{mapping,
+ "pagerduty.node_checks.file_descriptors",
+ "pagerduty.node_checks_file_descriptors",
+ [{datatype, integer}]}.
+
+%% Alert when the memory high watermark is hit
+{mapping,
+ "pagerduty.node_checks.memory_high_watermark",
+ "pagerduty.node_checks_memory_high_watermark",
+ [{datatype, {enum, [true, false]}}]}.
+
+%% Alert when the mgmt_stats_queue_depth exceeds this value
+{mapping,
+ "pagerduty.node_checks.mgmt_stats_queue_depth",
+ "pagerduty.node_checks_mgmt_stats_queue_depth",
+ [{datatype, integer}]}.
+
+%% Alert when the quantity of socket descriptors exceed this value
+{mapping,
+ "pagerduty.node_checks.socket_descriptors",
+ "pagerduty.node_checks_socket_descriptors",
+ [{datatype, integer}]}.

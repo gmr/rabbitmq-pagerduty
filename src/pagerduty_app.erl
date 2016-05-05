@@ -6,15 +6,14 @@
 %%      we don't need to inject a bootstep.
 %% @end
 %%==============================================================================
--module(pagerduty).
+-module(pagerduty_app).
 
 -behavior(application).
 
 -export([start/2, stop/1]).
 
-
-start(normal, _) ->
-  rabbit_mgmt_sup_sup:start_link().
+start(_Type, _StartArgs) ->
+  pagerduty_sup_sup:start_link().
 
 stop(_Args) ->
     ok.

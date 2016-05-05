@@ -15,15 +15,23 @@
          handle_info/2,
          terminate/2]).
 
+-export([settings/0]).
+
+settings() ->
+  gen_server2:call(?MODULE, settings).
+
+-include("pagerduty.hrl").
+
 start_link() ->
   case gen_server2:start_link({global, ?MODULE}, ?MODULE, [], []) of
     {ok, Pid} -> register(?MODULE, Pid), {ok, Pid};
     Error     -> Error
   end.
 
-
 init([]) ->
-  {ok, {}}.
+  Settings = pagerduty_lib:settings(),
+  rabbit_log:info("PagerDuty worker starting. Settings: ~p", [Settings]),
+  {ok, Settings}.
 
 code_change(_, State, _) ->
   {ok, State}.

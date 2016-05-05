@@ -11,3 +11,7 @@ indent_style = tab
 [.erl, .hrl]
 indent_size = 4
 indent_style = space
+
+[.schema]
+indent_size = 2
+indent_style = space

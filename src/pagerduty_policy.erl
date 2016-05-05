@@ -27,7 +27,7 @@
 -rabbit_boot_step({?MODULE,
                    [{description, "PagerDuty Policy Validation"},
                     {mfa, {?MODULE, register_keys, []}},
-                    {requires, rabbit_registry},
+                    {requires, routing_ready},
                     {cleanup, {?MODULE, deregister_keys, []}}]}).
 
 -ifdef(use_specs).
