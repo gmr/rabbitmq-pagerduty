@@ -1,10 +1,10 @@
 rabbitmq-pagerduty
 ==================
 
-A RabbitMQ plugin that monitors RabbitMQ and triggers `PagerDuty <http://pagerduty.com>`_
-alerts when policy-configured thresholds are exceeded.
+AA RabbitMQ plugin that monitors RabbitMQ and triggers `PagerDuty <http://pagerduty.com>`_
+alerts.
 
-The plugin requires the RabbitMQ Management plugin.
+The plugin requires the RabbitMQ 3.7.0 and higher along with the RabbitMQ Management plugin.
 
 Plugin Configuration
 --------------------

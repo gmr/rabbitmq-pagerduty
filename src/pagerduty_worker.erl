@@ -15,11 +15,6 @@
          handle_info/2,
          terminate/2]).
 
--export([settings/0]).
-
-settings() ->
-  gen_server2:call(?MODULE, settings).
-
 -include("pagerduty.hrl").
 
 start_link() ->
@@ -35,6 +30,9 @@ init([]) ->
 
 code_change(_, State, _) ->
   {ok, State}.
+
+handle_call(settings, _From, State) ->
+  {ok, State, State};
 
 handle_call(_Msg, _From, State) ->
   {noreply, unknown_command, State}.
