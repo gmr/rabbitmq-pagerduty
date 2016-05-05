@@ -12,7 +12,7 @@ Plugin Configuration
 The following top-level configuration parameters are used to configure the plugin.
 
 +--------------------+-------------+--------------------------------------------+
-| Parameter          | Data Type   | Description                                |
+| Parameter          | Type        | Description                                |
 +====================+=============+============================================+
 | ``api_key``        | ``string``  | The PagerDuty API key to use.              |
 +--------------------+-------------+--------------------------------------------+
@@ -32,7 +32,7 @@ Cluster Checks
 The following configuration parameters can be used to monitor cluster state:
 
 +----------------+-------------+---------------------------------------------+
-| Parameter      | Data Type   | Description                                 |
+| Parameter      | Type        | Description                                 |
 +================+=============+=============================================+
 | ``partition``  | ``bool``    | Alert when there is a cluster partition.    |
 +----------------+-------------+---------------------------------------------+
@@ -46,7 +46,7 @@ Node Checks
 The following configuration parameters are used to specify node specific monitoring:
 
 +----------------------------+-------------+---------------------------------------------+
-| Parameter                  | Data Type   | Description                                 |
+| Parameter                  | Type        | Description                                 |
 +============================+=============+=============================================+
 | ``connection_count``       | ``integer`` | Alert when the quantity of connections      |
 |                            |             | exceeds the specified value.                |
@@ -101,7 +101,7 @@ of un-acknowledged messages exceeds ``10000``.
 If no policy is defined setting a threshold, queues are not monitored.
 
 +---------------------------+-------------+-----------------------------------------------------+
-| Parameter                 | Data Type   | Description                                         |
+| Parameter                 | Type        | Description                                         |
 +===========================+===================================================================+
 | ``pd-service-key``        | ``string``  | The service integration key to use                  |
 +---------------------------+-------------+-----------------------------------------------------+
