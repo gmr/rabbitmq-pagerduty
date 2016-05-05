@@ -45,33 +45,33 @@ Node Checks
 
 The following configuration parameters are used to specify node specific monitoring:
 
-+----------------------------------+-------------+---------------------------------------------+
-| Description                      | Data Type   | Description                                 |
-+==================================+=============+=============================================+
-| ``connection_count``             | ``integer`` | Alert when the quantity of connections      |
-|                                  |             | exceeds the specified value.                |
-+----------------------------------+-------------+---------------------------------------------+
-| ``channel_count``                | ``integer`` | Alert when the quantity of channels exceeds |
-|                                  |             | the specified values.                       |
-+----------------------------------+-------------+---------------------------------------------+
-| ``disk_high_watermark``          | ``bool``    | Alert when the disk utilization high        |
-|                                  |             | watermark is triggered.                     |
-+----------------------------------+-------------+---------------------------------------------+
-| ``erlang_processes``             | ``integer`` | Alert when the quantity of erlang processes |
-|                                  |             | exceed the specified value.                 |
-+----------------------------------+-------------+---------------------------------------------+
-| ``file_descriptors``             | ``integer`` | Alert when the quantity of open file        |
-|                                  |             | descriptors exceed the specified value.     |
-+----------------------------------+-------------+---------------------------------------------+
-| ``memory_high_watermark``        | ``bool``    | Alert when the memory high watermark is     |
-|                                  |             | triggered.                                  |
-+----------------------------------+-------------+---------------------------------------------+
-| ``management_stats_queue_depth`` | ``integer`` | Alert when the management stats collector   |
-|                                  |             | queue depth exceeds the specified value.    |
-+----------------------------------+-------------+---------------------------------------------+
-| ``socket_descriptors``           | ``integer`` | Alert when the number of socket descriptors |
-|                                  |             | exceed the specified value.                 |
-+----------------------------------+-------------+---------------------------------------------+
++----------------------------+-------------+---------------------------------------------+
+| Parameter                  | Data Type   | Description                                 |
++============================+=============+=============================================+
+| ``connection_count``       | ``integer`` | Alert when the quantity of connections      |
+|                            |             | exceeds the specified value.                |
++----------------------------+-------------+---------------------------------------------+
+| ``channel_count``          | ``integer`` | Alert when the quantity of channels exceeds |
+|                            |             | the specified values.                       |
++----------------------------+-------------+---------------------------------------------+
+| ``disk_high_watermark``    | ``bool``    | Alert when the disk utilization high        |
+|                            |             | watermark is triggered.                     |
++----------------------------+-------------+---------------------------------------------+
+| ``erlang_processes``       | ``integer`` | Alert when the quantity of erlang processes |
+|                            |             | exceed the specified value.                 |
++----------------------------+-------------+---------------------------------------------+
+| ``file_descriptors``       | ``integer`` | Alert when the quantity of open file        |
+|                            |             | descriptors exceed the specified value.     |
++----------------------------+-------------+---------------------------------------------+
+| ``memory_high_watermark``  | ``bool``    | Alert when the memory high watermark is     |
+|                            |             | triggered.                                  |
++----------------------------+-------------+---------------------------------------------+
+| ``mgmt_stats_queue_depth`` | ``integer`` | Alert when the management stats collector   |
+|                            |             | queue depth exceeds the specified value.    |
++----------------------------+-------------+---------------------------------------------+
+| ``socket_descriptors``     | ``integer`` | Alert when the number of socket descriptors |
+|                            |             | exceed the specified value.                 |
++----------------------------+-------------+---------------------------------------------+
 
 Example Configuration
 ^^^^^^^^^^^^^^^^^^^^^
